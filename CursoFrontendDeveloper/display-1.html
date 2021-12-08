@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ /*Generalmente tiene un pequeño margen*/
+            margin:0;
+        }
+        div{
+            background: salmon;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        /*Los elemento tipo inline no tiene validez con width, etc*/
+        /*Puede utilizar margin pero solo el horizontal*/
+        a{
+            background: skyblue;
+            width: 200px;
+            height: 200px;
+        }
+        /*Su visualización en es bloque pero tiene propiedades de block*/
+        button{
+            background: red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p>Ejemplo Bloque</p>
+    <div>
+        Bloque
+
+    </div>
+    <hr>
+    <p>Ejemplo inline</p>
+    <a href="/">inline</a>
+    <hr>
+    <p>Ejemplo inline-block</p>
+    <hr>
+    <button>innline block</button>
+
+</body>
+</html>
