@@ -6,43 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div p {
+        div p{
             color: lime;
         }
-        div > div {
-            background: plum;
+        div >div{
+            color:red;
         }
-        .es {
+        .texto{
             background: red;
         }
         div + section{
-            background: palevioletred;
+            background: yellow;
         }
         div ~ p{
-            color:powderblue;
+            color: purple;
         }
-
     </style>
+
 </head>
 <body>
     <div>
         <div>
-            <p>Platzi</p>
-            <div class="es">Es</div>
+            Hijo directo
         </div>
-
-
-    </div>  
-
-    <p>Clase de selectores</p> 
-    <p>Clase de selectores</p>
-    <div>
-        Master
+        
     </div>
+    <div class="texto">
+        <p>Ejemplo de selector descendiente</p>
+        <p>soy descendiente</p>
+        <p>yo tambien</p>
+    </div>
+    <p>Clases de selectores</p>
+    <p>Clases de selectores</p>
     <section>
         Es lo mejor
     </section>
-    
+    <div>
+        Master
+    </div>
     
 </body>
 </html>
