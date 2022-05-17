@@ -10,32 +10,37 @@
             color: salmon;
         }
         p::first-letter{
-            color: teal;
+            color:teal;
         }
         p::before{
-            content:"⭐" ;
+            content:⭐;
         }
         p::after{
-            content: "💕";
+            content: 😜;
         }
         p:hover{
-            color: skyblue;     
+            color: skyblue;
         }
+        /*Indicamos que el segundo hijo tenga ese color*/
         div p:nth-child(2){
-            color: violet;
+            color:violet
         }
         ::placeholder{
             color: tomato;
         }
+
+
     </style>
 </head>
 <body>
     <p>Hola</p>
     <div>
-        <p>Platzi</p>
-        <p>Master</p>
-        <p>Lo mejor</p>
+        <p>Esto es </p>
+        <p>un ejemplo de </p>
+        <p>Selectores Pseudoclases y pseudoelementos</p>
     </div>
-    <input type="text" placeholder="name">
+    <input type="text" placeholder="nombre">
+
+
 </body>
 </html>
