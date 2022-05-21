@@ -9,17 +9,12 @@
         body{ /*Generalmente tiene un pequeño margen*/
             margin:0;
         }
-        /* div{
-            background: salmon;
-            width: 200px;
-            height: 200px;
-            margin: 20px;
-        } */
+       
         div{
             background: salmon;
             width: 200px;
             height: 200px;
-            margin: 20;
+            margin: 20; 
         }
         /*Los elemento tipo inline no tiene validez con width, etc*/
         /*Puede utilizar margin pero solo el horizontal*/
@@ -30,14 +25,24 @@
         } */
         a{
             background: skyblue;
-            width: 200;
-            height: 200px;
+            width: 100px; /* no aplica*/
+            height: 100px;/* no aplica*/
+            margin: 10px; /* si aplica pero solo de manera horizontal */
+            
         }
         /*Su visualización en es bloque pero tiene propiedades de block*/
         button{
             background: red;
             width: 200px;
             height: 200px;
+        }
+        #btn_iniciar_sesion:hover{
+            background: yellow;
+        }
+        #btn_ini
+
+        .ejemplo{
+            margin: 0;
         }
     </style>
 </head>
@@ -48,12 +53,12 @@
 
     </div>
     <hr>
-    <p>Ejemplo inline</p>
+    <p class="ejemplo">Ejemplo inline</p>
     <a href="/">inline</a>
     <hr>
-    <p>Ejemplo inline-block</p>
+    <p class="ejemplo">Ejemplo inline-block</p>
     <hr>
-    <button>innline block</button>
+    <button id="btn_iniciar_sesion">innline block</button>
 
 </body>
 </html> 
