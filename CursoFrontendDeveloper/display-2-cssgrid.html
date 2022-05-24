@@ -8,30 +8,37 @@
     <style>
         .container{
             display: grid;
-            width: 400;
-            height: 400;
+            width: 400px;
+            height: 400px;
             background: papayawhip;
+            /* para poner a columnas ponemos: (ya que por defecto es filas)
+               además para hacer una cuadricula tanto filas y columnas
+            */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
         }
 
         .item{
-            background: pink;
+            background: blue;
         }
+        /* para seleccionar cada hijo (4) hacemos , en este caso el primero */
+        /* Grid-column y Grid-row, estas detalla inicio y final tanto de columna como de fila  */
         .container .item:nth-child(1){
-            grid-column: 1/2 ;
+            grid-column: 1/ 2;
+            grid-row: 1/ 2;
         }
         .container .item:nth-child(2){
-            grid-column: 2/3 ;
+            grid-column: 2/ 3;
             grid-row: 2/3;
         }
         .container .item:nth-child(3){
-            grid-column: 3/4 ;
-            grid-row: 3/4;
+            grid-column: 3/ 4;
+            grid-row: 3/ 4;
         }
         .container .item:nth-child(4){
-            grid-column: 4/4 ;
-            grid-row: 4/4;
+            grid-column: 4/ 4;
+            grid-row: 4/ 4;
         }
-
     </style>
 </head>
 <body>
@@ -39,7 +46,7 @@
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
-        <div class="item"></div>
+        <div class="item"></div>       
 
     </div>
 </body>
