@@ -8,15 +8,17 @@
     <style>
         div {
             width: 200px;
-            height: 20px;
+            height: 200px;
             background: plum;
             padding: 20px;
+            /*Le decimos que no nos sume el padding, si no colocamos el espacio aumenta mas*/             
             box-sizing: border-box;
-            /*Le decimos que no nos sume el padding, si no colocamos el espacio aumenta mas*/
+            /*primero la anchura, luego el tipo de borde, y color*/
             border: 1px solid hotpink; 
-            /*primero la anchura, luego el tipo, y color*/
-            margin: 20px;
             /*Parte externa, separación*/
+            margin: 20px;
+            /* IMPORTANTE: los margenes verticales en css se mezclan */
+            
 
         }
     </style>
