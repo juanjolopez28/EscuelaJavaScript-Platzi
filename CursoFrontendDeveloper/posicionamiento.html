@@ -9,132 +9,139 @@
         .container{
             width: 200px;
             height: 200px;
-            background: peachpuff;
+            background: papayawhip;
             position: relative;
-            top:20px;
+            top: 20px;
         }
         .item{
             width: 20px;
             height: 20px;
             background: hotpink;
             position: absolute;
-            /* Hace adiere al elemento contenedor mas cercano a este caso container */
+            /* se adiere al su contener o elemento mas cercano */
             right: 0;
 
         }
-        nav{
-            width: 100%;
+        nav {
+            width: 100px;
             height: 60px;
-            background: lightcyan;
-            position:fixed;
-            /* Se queda estatico donde se le indiquen */
-            top:0;
+            background: red;
+            position: fixed;
+            /* se queda estático donde le decimos */
         }
-        ul p{
+        ul p {
             position: sticky;
-            /* Funciona con hermanos */
             top:0;
         }
+        /*  necesita hermanos, se queda en la parte superior*/
     </style>
 </head>
 <body>
-    <nav></nav>
+    <nav> </nav>  
     <div class="container">
         <div class="item"></div>
-        <!-- <div class="item"></div> -->
+
     </div>
-    
-    <p>What is Lorem Ipsum?
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare felis vel felis blandit consequat. Morbi orci lorem, venenatis et arcu vel, elementum consequat nisi. Donec sem elit, viverra et sapien in, gravida dapibus ex. Cras ac laoreet lacus, ut congue est. Integer non dolor in velit volutpat tincidunt. Vestibulum sit amet erat tincidunt, rhoncus magna a, consectetur enim. Vestibulum bibendum sapien at ipsum placerat, sit amet laoreet magna consequat. Nullam maximus metus et lacus lobortis laoreet ac ac lacus.
 
-    Why do we use it?
-    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-    Where does it come from?
-    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-    Where can I get some?
-    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        Cras posuere erat aliquam justo pulvinar convallis. Maecenas viverra tempus nisl at tristique. Duis congue, purus ut congue rhoncus, metus nulla pellentesque arcu, et iaculis augue enim nec ex. Sed varius molestie lobortis. Cras hendrerit posuere pharetra. Proin efficitur velit nec justo tempor varius in vitae purus. Vivamus vulputate ornare eros a varius. Nunc ut malesuada risus, et rutrum risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed laoreet ligula enim, et convallis sem vestibulum ac. Nulla nisl velit, tempor a mattis ac, porttitor sed nibh. Pellentesque venenatis sed nunc eu elementum. Proin porttitor lectus tristique interdum euismod. Quisque facilisis ultrices dignissim. Nullam sed sapien metus.
+        
+        Maecenas bibendum varius varius. Aenean dapibus consequat urna, pretium ultricies elit scelerisque quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam semper consequat erat, in mattis ex. Maecenas eget aliquet sapien. Morbi auctor cursus purus sed blandit. Vivamus massa arcu, accumsan et rutrum eget, placerat eget libero. Donec a mollis ipsum, quis porttitor odio. Nam eget ex mollis, maximus nulla ut, posuere nisl. Donec vel dui interdum, posuere turpis at, vulputate diam.
+        
+        Praesent sed ultrices magna. Aenean consectetur fringilla diam, at pretium nisi consequat nec. Duis interdum, odio quis pretium consequat, turpis orci vulputate sem, eget porttitor velit justo vitae lacus. Suspendisse vulputate tincidunt porttitor. Maecenas non augue dapibus, ullamcorper urna ornare, suscipit diam. Donec quis bibendum nulla. Integer tincidunt, massa nec mattis maximus, risus neque elementum diam, sit amet hendrerit ipsum mi lacinia nulla. Mauris sed mollis turpis. Proin blandit risus risus, eu placerat sem pellentesque eu. Quisque gravida sem et efficitur tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        
+        Sed elit urna, interdum at cursus id, ultrices ut quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec condimentum et enim laoreet condimentum. Sed vitae consequat diam. Nam vitae est sed erat consectetur consectetur. Aliquam vel molestie nulla, ac euismod dolor. Ut dolor mi, tristique a libero et, viverra auctor sem. Nulla tellus nisi, blandit id odio quis, tincidunt mattis ex. Sed orci orci, efficitur ut aliquet nec, dictum vitae mauris. Sed aliquam pulvinar tempus. Nam ac pulvinar urna. Duis cursus nec eros quis commodo. 
     </p>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
     <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
+        <p>frutas</p>
+        <li>Manzanas</li>
         <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
-    </ul>
-    <ul>
-        <p>Frutas</p>
-        <li>Manzana</li>
-        <li>Pera</li>
-        <li>Sandia</li>
-        <li>Platano</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
+        <li>platana</li>
     </ul>
 </body>
 </html>
