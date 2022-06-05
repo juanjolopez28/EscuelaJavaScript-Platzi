@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- 
-        Unidades de medidas Absolutas y relativas
-     -->
     <style>
+        /* modificamos el fontzise basico para utilizar los rem */
         html{
-            font-size: 62%;
-            /* Hacemos este cambio para que un rem equivalga a 10px */
-
+            /* font-size: 100%; */
+            /* Por defecto son 16px */
+            /* para que un rem valga 10px hacemos un calculo */
+            font-size: 62.5%;
         }
         body{
-            margin: 0;
+            margin:0;
         }
         div{
             width: 100px;
             height: 100px;
             background: pink;
         }
-        /* Un body tiene por defecto 16px */
         p{
-            font-size: 2.5rem;
+            font-size: 2rem;
+            /* 1rem equivale a 16px */
         }
         .container{
             width: 100vw;
@@ -33,6 +32,7 @@
         }
     </style>
 </head>
+
 <body>
     <div>Platzi</div>
     <p>Master</p>
