@@ -110,6 +110,21 @@
             .logo{
                 display: block;
             }
+            /* Puede ser una solución optima */
+            /* .form-container{
+                grid-template-rows: auto 1fr 100%;
+            }
+            .secondary-button{
+                
+                align-self: end;
+                margin-bottom: 24px;
+            } */
+            .secondary-button{
+                position: absolute;
+                margin-bottom: 24px;
+                bottom:0;
+                width: inherit;
+            }
         }
     </style>
 </head>
@@ -126,8 +141,8 @@
                 <input type="submit" value="Log in" class="primary-button login-button">
                 <a href="/">Forgot my password</a>
             </form>
+            <button class="secondary-button signup-button">Sign up</button>
         </div>
-        <button class="secondary-button signup-button">Sign up</button>
     </div>
 </body>
 </html>
