@@ -50,24 +50,35 @@
             /* para que no aparezca en desktop */
             display: none;
         }
-        
+        .title {
+            font-size: var(--lg);
+            margin-bottom: 36px;
+            text-align: start;
+        }
+        .subtitle {
+            font-size: var(--very-light-pink);
+            font-size: var(--md);
+            /* para que sea mas delgadito */
+            font-weight: 300;
+            /* para que no se crucen los parrafos */
+            margin-top: 0;
+            margin-bottom: 32px;
+            text-align: center;
+        }
         .form{
             display: flex; /* sabes que lo hace en columnas */
             flex-direction: column;/* tenemos la estrutura en columan */
-            
         }
-        .form a {
-            color:var(--hospital-green);
-            font-size: var(--sm);
-            text-align: center;
-            text-decoration: none;
-            margin-bottom: 52px;
+        .form div{
+            display: flex;
+            flex-direction: column;
         }
         .label{
             font-size: var(--sm);
             font-weight: bold; /* que sea gordita */
             margin-bottom: 4px; /* siguiendo la guia de shopify */
         }
+        /* Recalcar que las clases general y luego las especificamos */
         .input{
             background-color: var(--text-input-field);
             border: none;/* para que no tenga los bordes */
@@ -77,9 +88,10 @@
             padding: 6px;
             margin-bottom: 12px;
         }
-        .input-email{
+        .input-name,
+        .input-email,
+        .input-password{
             margin-bottom: 22px;
-
         }
         .primary-button{
             background-color: var(--hospital-green);
@@ -92,39 +104,18 @@
             font-weight: bold;
             height: 50px;
         }
-        .secondary-button{
-            background-color: var(--white);
-            border-radius: 8px;
-            border: 1px solid var(--hospital-green);
-            color: var(--hospital-green);
-            width: 100%;
-            cursor: pointer;/* para que nos salga una manito  cuando pasamos el mouse */
-            font-size: var(--md);
-            font-weight: bold;
-            height: 50px;
-        }
         .login-button{
             margin-top: 14px;
             margin-bottom: 30px;
         }
         @media (max-width:640px){
-            .logo{
-                display: block;
+            .form-container{
+                height: 100%;
             }
-            /* Puede ser una solución optima */
-            /* .form-container{
-                grid-template-rows: auto 1fr 100%;
-            }
-            .secondary-button{
-                
-                align-self: end;
-                margin-bottom: 24px;
-            } */
-            .secondary-button{
-                position: absolute;
-                margin-bottom: 24px;
-                bottom:0;
-                width: inherit;
+            .form{
+                height: 100%;
+                /* para separar los elemnetos uno abajo */
+                justify-content: space-between;
             }
         }
     </style>
@@ -132,18 +123,23 @@
 <body>
     <div class="login">
         <div class="form-container">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <h1 class="title">My account</h1>
             <form action="/" class="form">
-                <label for="email" class="label">Email Addres</label>
-                <input type="text" id="email" placeholder="juanjo@gmail.com" class="input input-email">
-                <label for="password" class="label">Password</label>
-                <input type="password" id="password" placeholder="*********" class="input input-password">
-                <!-- gracias a la etiqueta form podemos usar un input como button -->
-                <input type="submit" value="Log in" class="primary-button login-button">
-                <a href="/">Forgot my password</a>
+                <div>
+                    <label for="name" class="label">Name</label>
+                    <input type="text" id="name" placeholder="Juan Lopez" class="input input-name">
+                    
+                    <label for="email" class="label">Email Address</label>
+                    <input type="text" id="email" placeholder="platzi@gmail.com" class="input input-email">
+                    <label for="password" class="label">Password</label>
+                    <input type="password" id="password" placeholder="*********" class="input input-password">
+                        <!-- gracias a la etiqueta form podemos usar un input como button -->
+
+                </div>
+                <input type="submit" value="Create" class="primary-button login-button">
             </form>
-            <button class="secondary-button signup-button">Sign up</button>
         </div>
+    
     </div>
 </body>
 </html>
